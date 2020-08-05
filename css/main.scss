@@ -1,0 +1,68 @@
+/*  Colors */
+$cyan: hsl(179, 62%, 43%);
+$cyan-light: lighten($cyan, 8%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$white: #ffffff;
+
+/* General settings */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: $light-gray;
+}
+
+h1, 
+h2, 
+h3 {
+    margin-top: 0;
+}
+
+/*  Main grid */
+.main-grid{
+    width: 80%;
+    margin: 2em auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.10);
+}
+
+/*  Sections */
+#community, 
+#subscription, 
+#why-us {
+    padding: 1.3rem;
+}
+
+#community {
+    background-color: $white;
+}
+
+#subscription {
+    background-color: $cyan;
+}
+
+#why-us {
+    background-color: $cyan-light;
+}
+
+
+/*  Attribution */
+.attribution { 
+    font-size: 12px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

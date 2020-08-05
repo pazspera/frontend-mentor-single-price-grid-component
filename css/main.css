@@ -45,6 +45,22 @@ h3 {
   background-color: #ffffff;
 }
 
+.community-main-title {
+  color: #2ab2af;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.community-subtitle {
+  color: #c0df34;
+  font-size: 1.1rem;
+}
+
+.community-text {
+  color: #98a6bd;
+  line-height: 1.75em;
+}
+
 #subscription {
   background-color: #2ab2af;
 }
@@ -53,6 +69,8 @@ h3 {
   background-color: #35d0cd;
 }
 
+/*  IMPORTANT!!! 
+    Add hover state to the button */
 /*  Attribution */
 .attribution {
   font-size: 12px;

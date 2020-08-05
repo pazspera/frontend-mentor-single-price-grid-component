@@ -6,6 +6,10 @@ $light-gray: hsl(204, 43%, 93%);
 $grayish-blue: hsl(218, 22%, 67%);
 $white: #ffffff;
 
+%white-font-color {
+    color: $white;
+}
+
 /* General settings */
 *,
 *::before,
@@ -49,6 +53,22 @@ h3 {
     background-color: $white;
 }
 
+.community-main-title {
+    color: $cyan;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.community-subtitle {
+    color: $bright-yellow;
+    font-size: 1.1rem;
+}
+
+.community-text {
+    color: $grayish-blue;
+    line-height: 1.75em;
+}
+
 #subscription {
     background-color: $cyan;
 }
@@ -57,6 +77,9 @@ h3 {
     background-color: $cyan-light;
 }
 
+
+/*  IMPORTANT!!! 
+    Add hover state to the button */
 
 /*  Attribution */
 .attribution { 

@@ -1,4 +1,9 @@
 /*  Colors */
+/*  Font color */
+.price-amount, .section-title, .text {
+  color: #ffffff;
+}
+
 /* General settings */
 *,
 *::before,
@@ -38,7 +43,7 @@ h3 {
 #community,
 #subscription,
 #why-us {
-  padding: 1.3rem;
+  padding: 1.4rem;
 }
 
 #community {
@@ -47,13 +52,13 @@ h3 {
 
 .community-main-title {
   color: #2ab2af;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .community-subtitle {
   color: #c0df34;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .community-text {
@@ -65,12 +70,52 @@ h3 {
   background-color: #2ab2af;
 }
 
-#why-us {
-  background-color: #35d0cd;
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  margin-right: 0.2em;
+  font-weight: 700;
+}
+
+.price-description {
+  color: #e5eff5;
+}
+
+.subscription-text {
+  font-size: 1.15rem;
 }
 
 /*  IMPORTANT!!! 
     Add hover state to the button */
+#why-us {
+  background-color: #2fc6c4;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  /* removes indent on list*/
+}
+
+/*  Shared font styles */
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+
+.text {
+  line-height: 1.5em;
+}
+
 /*  Attribution */
 .attribution {
   font-size: 12px;

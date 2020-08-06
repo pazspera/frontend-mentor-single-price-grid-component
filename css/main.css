@@ -1,6 +1,6 @@
 /*  Colors */
 /*  Font color */
-.price-amount, .section-title, .text {
+.section-title, .text, .price-amount {
   color: #ffffff;
 }
 
@@ -37,17 +37,34 @@ h3 {
   margin: 2em auto;
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+  /* Add round borders to main grid in mobile layout */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-/*  Sections */
+/*  Shared styles on all sections  */
 #community,
 #subscription,
 #why-us {
   padding: 1.4rem;
 }
 
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+
+.text {
+  line-height: 1.5em;
+}
+
+/*  Community section */
 #community {
   background-color: #ffffff;
+  /* Add round borders to main grid in mobile layout */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .community-main-title {
@@ -66,6 +83,7 @@ h3 {
   line-height: 1.75em;
 }
 
+/*  Subscription section */
 #subscription {
   background-color: #2ab2af;
 }
@@ -93,10 +111,33 @@ h3 {
   font-size: 1.15rem;
 }
 
-/*  IMPORTANT!!! 
-    Add hover state to the button */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #c0df34;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover, .btn:focus {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+/*  Why us section */
 #why-us {
   background-color: #2fc6c4;
+  /* Add round borders to main grid in mobile layout */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 ul {
@@ -105,18 +146,7 @@ ul {
   /* removes indent on list*/
 }
 
-/*  Shared font styles */
-.section-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1.2em;
-}
-
-.text {
-  line-height: 1.5em;
-}
-
-/*  Attribution */
+/*  Attribution section */
 .attribution {
   font-size: 12px;
   text-align: center;

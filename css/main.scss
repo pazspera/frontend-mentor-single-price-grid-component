@@ -39,6 +39,7 @@ h3 {
 /*  Main grid */
 .main-grid{
     width: 80%;
+    max-width: 700px;
     margin: 2em auto;
     box-shadow: 0px 15px 15px rgba(0,0,0,0.10);
     /* Add round borders to main grid in mobile layout */
@@ -87,6 +88,7 @@ h3 {
 .community-text {
     color: $grayish-blue;
     line-height: 1.75em;
+    max-width: 550px;
 }
 
 /*  Subscription section */
@@ -154,3 +156,33 @@ ul {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 700px) {
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+            "c c c c"
+            "c c c c"
+            "s s w w"
+            "s s w w";
+    }
+
+    #community {
+        grid-area: c;
+    }
+
+    #subscription {
+        grid-area: s;
+        /* Add round borders to main grid in desktop layout */        
+        border-bottom-left-radius: 10px;
+    }
+
+    #why-us {
+        grid-area: w;
+        /*  Remove border radius in desktop layout */
+        border-bottom-left-radius: 0px;
+    }
+}
+

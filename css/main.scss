@@ -28,6 +28,10 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, 

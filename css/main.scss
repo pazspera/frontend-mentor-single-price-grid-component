@@ -24,13 +24,13 @@ html {
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 98vh;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: $light-gray;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
